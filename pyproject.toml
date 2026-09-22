@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aakar"
+version = "0.1.0"
+description = "Decentralized, component-based token-minimal AI coding system"
+authors = [{ name = "Aakar Team" }]
+dependencies = [
+    "tree-sitter>=0.22.0",
+    "tree-sitter-html>=0.20.0"
+]
+requires-python = ">=3.10"
+
+[project.scripts]
+aakar = "aakar.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["aakar*", "adapters*"]

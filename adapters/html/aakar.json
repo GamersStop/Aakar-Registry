@@ -1,0 +1,32 @@
+{
+    "name": "aakar-html",
+    "version": "1.0.0",
+    "description": "Zero-token DOM pruner and structural HTML5 validator",
+    "triggers": {
+        "extensions": [
+            ".html",
+            ".htm"
+        ],
+        "filenames": [
+            "index.html"
+        ],
+        "intent_keywords": [
+            "landing",
+            "hero",
+            "signup",
+            "ui",
+            "page",
+            "portfolio",
+            "login"
+        ]
+    },
+    "runtime": {
+        "skeleton": "skeleton.py",
+        "verify": "verify.py",
+        "init": "init.py"
+    },
+    "system_contract": {
+        "directive": "Emit ONLY valid, semantic HTML5 code. STRICTLY FORBIDDEN: markdown prose, explanations, conversational greetings, package.json suggestions, or framework alternatives. Start directly with the markup.",
+        "default_css": "https://cdn.tailwindcss.com"
+    }
+}
